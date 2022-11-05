@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-img{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 100px;
+}
+
+.width-img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+    position: absolute;
+}
+
+.scroll-next{
+    padding: .5rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+}
+
+.scroll-prev{
+    padding: .5rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 360px;   
+    transform: rotate(180deg); 
+}
+
+.scroll-next::after,
+.scroll-prev::after{
+    content: "^"
+}
